@@ -11,32 +11,32 @@ export const ABOUT_TEXT = `Olá.`;
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Ignite Feed",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Aplicação desenvolvida para simular um feed de rede social, introduzindo interatividades como comentar, curtir e excluir comentários e proporcionando uma experiência de usuária fluida e agradável",
+    technologies: ["HTML", "CSS", "React", "TypeScript"],
   },
   {
     title: "Portfolio Website",
-    image: project3,
+    image: project2,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+      "Um site de portfólio pessoal que apresenta projetos, habilidades e informações de contato.",
     technologies: ["React", "Tailwind CSS"],
   },
   {
-    title: "Blogging Platform",
+    title: "Megazord",
+    image: project3,
+    description:
+      "Um aplicativo Web para hospedar vários minijogos (xadrez, quebra-cabeça, jogo da velha, quadro branco) com base em projetos do mundo real, fornecendo uma plataforma digital para que os usuários desfrutem desses jogos.",
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
+  },
+  {
+    title: "HosToday",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Uma plataforma de hospedagem de domínios com ofertas designadas e função de busca.",
+    technologies: ["HTML", "CSS"],
   },
 ];
 
