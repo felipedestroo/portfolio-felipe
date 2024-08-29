@@ -25,24 +25,38 @@ const Hero = () => {
                         Felipe Destro
                     </motion.h1>
                     <motion.span 
-                        variants={container(0)}
+                        variants={container(0.5)}
                         initial="hidden"
                         animate="visible"
-                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">
+                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-orange-500 bg-clip-text text-3xl tracking-tight text-transparent">
                             Front-End Developer
                         </motion.span>
                     <motion.p 
-                        variants={container(0)}
+                        variants={container(1)}
                         initial="hidden"
                         animate="visible"
                         className="my-2 max-w-xl py-6 font-light tracking-tighter">
                             {HERO_CONTENT}
                         </motion.p>
+                    <motion.button 
+                        variants={container(1.5)}
+                        initial="hidden"
+                        animate="visible"
+                        className="mb-0 bg-transparent rounded-md p-2 hover:bg-transparent hover:text-orange-500 hover:duration-100 hover:border-orange-800 hover:border-2">
+                        <a href="Felipe-Destro-Resume.pdf" target="_blank">Download CV</a>
+                    </motion.button>
                 </div>
             </div>
-            <div className="w-full lg:w-1/2 lg:p-8">
+            <div className="w-min lg:w-1/2 lg:p-8">
                 <div className="flex justify-center">
-                    <img className="rounded-md w-auto h-auto" src={profilePic} alt="Profile Pic"/>
+                    <motion.img 
+                        initial={{ x: 100, opacity: 0}}
+                        animate={{ x: 0, opacity: 1}}
+                        transition={{duration: 1, delay: 1}}
+                        className="rounded-md w-auto h-auto" 
+                        src={profilePic} 
+                        alt="Profile Pic"
+                    />
                 </div>
             </div>
         </div>
