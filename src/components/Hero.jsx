@@ -28,7 +28,7 @@ const Hero = () => {
                         variants={container(0.5)}
                         initial="hidden"
                         animate="visible"
-                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-orange-500 bg-clip-text text-3xl tracking-tight text-transparent">
+                        className="bg-gradient-to-r from-orange-300 via-orange-400 to-orange-500 bg-clip-text text-3xl tracking-tight text-transparent">
                             Front-End Developer
                         </motion.span>
                     <motion.p 
@@ -42,20 +42,20 @@ const Hero = () => {
                         variants={container(1.5)}
                         initial="hidden"
                         animate="visible"
-                        className="mb-0 bg-transparent rounded-md p-2 hover:bg-transparent hover:text-orange-500 hover:duration-100 hover:border-orange-800 hover:border-2">
+                        className="mb-0 bg-transparent border-2 border-transparent rounded-md p-2 hover:bg-transparent hover:text-orange-500 hover:duration-100 hover:border-orange-600 hover:border-2">
                         <a href="Felipe-Destro-Resume.pdf" target="_blank">Download CV</a>
                     </motion.button>
                 </div>
             </div>
-            <div className="w-min lg:w-1/2 lg:p-8">
+            <div className="w-min lg:w-1/3 lg:p-8">
                 <div className="flex justify-center">
                     <motion.img 
                         initial={{ x: 100, opacity: 0}}
                         animate={{ x: 0, opacity: 1}}
                         transition={{duration: 1, delay: 1}}
-                        className="rounded-md w-auto h-auto" 
+                        className="rounded-md w-auto h-auto lg:border-2 lg:rounded-full" 
                         src={profilePic} 
-                        alt="Profile Pic"
+                        alt="Felipe Destro's Profile Picture"
                     />
                 </div>
             </div>
