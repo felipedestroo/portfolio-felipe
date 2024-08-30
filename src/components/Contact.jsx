@@ -20,7 +20,7 @@ function Contact() {
               initial={{opacity: 0, x: 100}}
               transition={{duration: 1}}
               className="my-4">{CONTACT.phoneNo}</motion.p>
-            <a href="#" className="border-b">
+            <a href="mailto:felipedestrodev@gmail.com" className="border-b">
                 {CONTACT.email}
             </a>
         </div>
