@@ -21,21 +21,21 @@ export const PROJECTS = [
     title: "Portfolio Website",
     image: project2,
     description:
-      "Um site de portfólio pessoal que apresenta projetos, habilidades e informações de contato.",
+      "Site de portfólio pessoal que exibe projetos, habilidades e informações de contato, ideal para destacar competências e facilitar conexões profissionais.",
     technologies: ["React", "Tailwind CSS"],
   },
   {
     title: "Megazord",
     image: project3,
     description:
-      "Um aplicativo Web para hospedar vários minijogos (xadrez, quebra-cabeça, jogo da velha, quadro branco) com base em projetos do mundo real, fornecendo uma plataforma digital para que os usuários desfrutem desses jogos.",
+      "Aplicativo Web que hospeda minijogos como xadrez, quebra-cabeça, jogo da velha e quadro branco, proporcionando uma plataforma digital interativa para os usuários se divertirem.",
     technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
   {
     title: "HosToday",
     image: project4,
     description:
-      "Uma plataforma de hospedagem de domínios com ofertas designadas e função de busca.",
+      "Plataforma de hospedagem de domínios com ofertas personalizadas e função de busca, facilitando a aquisição e gerenciamento de domínios de forma eficiente.",
     technologies: ["HTML", "CSS"],
   },
 ];
