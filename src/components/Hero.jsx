@@ -31,21 +31,32 @@ const Hero = () => {
                         className="bg-gradient-to-r from-orange-300 via-orange-400 to-orange-500 bg-clip-text text-3xl tracking-tight text-transparent">
                             Front-End Developer
                         </motion.span>
-                    <motion.p 
+                        <motion.p 
                         variants={container(1)}
                         initial="hidden"
                         animate="visible"
                         className="my-2 max-w-xl py-6 font-light tracking-tighter">
                             {HERO_CONTENT}
                         </motion.p>
+                        <div className="flex flex-row"> 
                     <motion.button 
                         variants={container(1.5)}
                         initial="hidden"
                         animate="visible"
-                        className="mb-0 bg-transparent border-2 border-transparent rounded-md p-2 hover:bg-transparent hover:text-orange-500 hover:duration-100 hover:border-orange-600 hover:border-2">
+                        className="mr-3 w-32 justify-center flex bg-orange-600 border-2 border-transparent text-white rounded-md p-2 hover:bg-transparent hover:text-orange-500 hover:duration-100 hover:border-orange-600 hover:border-2">
                         <a href="Felipe-Destro-Resume.pdf" target="_blank">Download CV</a>
                     </motion.button>
+                    <motion.button
+                    variants={container(1.5)}
+                        initial="hidden"
+                        animate="visible"
+                        className="flex w-32 justify-center bg-white border-2 text-neutral-900 rounded-md p-2 hover:bg-transparent hover:text-white hover:duration-100 hover:border-white hover:border-2">
+                        <a href="#projects">Projetos</a>
+                    </motion.button>
                 </div>
+
+                </div>
+                
             </div>
             <div className="w-min lg:w-1/3 lg:p-8">
                 <div className="flex justify-center">
