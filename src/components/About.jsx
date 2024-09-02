@@ -12,7 +12,7 @@ function About() {
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2">
-            <div className="flex justify-center">
+            <div className="flex justify-center text-center">
                 <p className="">{ABOUT_TEXT}</p>
             </div>
         </motion.div>
