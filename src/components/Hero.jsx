@@ -39,20 +39,22 @@ const Hero = () => {
                             {HERO_CONTENT}
                         </motion.p>
                         <div className="flex flex-row"> 
-                    <motion.button 
+                    <motion.a
                         variants={container(1.5)}
                         initial="hidden"
                         animate="visible"
+                        href="Felipe-Destro-Resume.pdf"
                         className="mr-3 w-32 justify-center flex bg-orange-600 border-2 border-transparent text-white rounded-md p-2 hover:bg-transparent hover:text-orange-500 hover:duration-100 hover:border-orange-600 hover:border-2">
-                        <a href="Felipe-Destro-Resume.pdf" target="_blank">Download CV</a>
-                    </motion.button>
-                    <motion.button
+                        Download CV
+                    </motion.a>
+                    <motion.a
                     variants={container(1.5)}
                         initial="hidden"
                         animate="visible"
+                        href="#projects"
                         className="flex w-32 justify-center bg-white border-2 text-neutral-900 rounded-md p-2 hover:bg-transparent hover:text-white hover:duration-100 hover:border-white hover:border-2">
-                        <a href="#projects">Projetos</a>
-                    </motion.button>
+                        Projetos
+                    </motion.a>
                 </div>
 
                 </div>
