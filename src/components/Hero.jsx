@@ -44,6 +44,7 @@ const Hero = () => {
                         initial="hidden"
                         animate="visible"
                         href="Felipe-Destro-Resume.pdf"
+                        target="_blank"
                         className="mr-3 w-32 justify-center flex bg-orange-600 border-2 border-transparent text-white rounded-md p-2 hover:bg-transparent hover:text-orange-500 hover:duration-100 hover:border-orange-600 hover:border-2">
                         Download CV
                     </motion.a>
