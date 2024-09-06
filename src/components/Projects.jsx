@@ -17,11 +17,9 @@ function Projects() {
                     Projetos
             </motion.h2>
             <div className="flex justify-center w-auto m-8">
-              <div className="bg-black border border-neutral-800 w-96 h-96 rounded-md">
-                <div className="p-8">
+              <div className="bg-black border border-neutral-800 w-96 h-96 rounded-md p-8">
                   <h3 className="text-2xl mb-2">Ignite Feed</h3>
                   <p>Aplicação desenvolvida para simular um feed de rede social, introduzindo interatividades</p>
-                </div>
                 <div className="flex justify-center">
                   <a href="#" className="flex items-center hover:bg-neutral-800 rounded-md">
                     <button className="text-2xl">
