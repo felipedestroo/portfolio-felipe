@@ -1,10 +1,12 @@
-import { ABOUT_TEXT } from "../constants"
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function About() {
+  const { t } = useTranslation();
+
   return <div className=" border-b border-neutral-900 pb-4">
     <h2 className="my-20 text-center text-4xl">
-        Sobre <span className="text-neutral-500">Mim</span>
+        {t("about.title1")} <span className="text-neutral-500">{t("about.title2")}</span>
     </h2>
     <div className="flex justify-center">
         <motion.div 
@@ -13,7 +15,7 @@ function About() {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2">
             <div className="flex justify-center lg:text-center">
-                <p className="">{ABOUT_TEXT}</p>
+                <p className="">{t("about.text")}</p>
             </div>
         </motion.div>
     </div>

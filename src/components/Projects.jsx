@@ -2,10 +2,14 @@ import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import project1 from "../assets/projects/IgniteProject.jpg";
 import project2 from "../assets/projects/PortfolioProject.jpg";
-import project3 from "../assets/projects/WfProject.jpg";
+// import project3 from "../assets/projects/WfProject.jpg";
+import { useTranslation } from "react-i18next"
 
 
 function Projects() {
+
+  const { t } = useTranslation();
+
   return (
     <section id="projects">
       <div className="border-b border-neutral-900 pb-4">
@@ -14,7 +18,7 @@ function Projects() {
               initial={{opacity: 0, y: -100}}
               transition={{duration: 0.5}}
               className="my-20 text-center text-4xl">
-              Projetos
+              {t("projects.title")}
           </motion.h2>
           <div className="grid min-h-[50vh] w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 3xl:py-12">
             <motion.div
@@ -25,8 +29,7 @@ function Projects() {
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="tracking-tight text-2xl font-semibold 3xl:text-3xl 4xl:text-4xl">Ignite Feed</h3>
                 <p className="text-muted-foreground text-base font-medium 3xl:text-lg 4xl:text-xl">
-                  Aplicação desenvolvida para simular um feed de rede social, introduzindo interatividades como comentar, 
-                  curtir e excluir comentários e proporcionando uma experiência de usuária fluida e agradável.
+                  {t("projects.descIgnite")}
                 </p>
               </div>
               <div className="p-6 pt-0">
@@ -55,8 +58,7 @@ function Projects() {
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="tracking-tight text-2xl font-semibold 3xl:text-3xl 4xl:text-4xl">Personal Portfolio</h3>
                 <p className="text-muted-foreground text-base font-medium 3xl:text-lg 4xl:text-xl">
-                  Site de portfólio pessoal que exibe projetos, habilidades e informações de contato, 
-                  ideal para destacar competências e facilitar conexões profissionais.
+                  {t("projects.descPortfolio")}
                 </p>
               </div>
               <div className="p-6 pt-0">
@@ -85,13 +87,17 @@ function Projects() {
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="tracking-tight text-2xl font-semibold 3xl:text-3xl 4xl:text-4xl">Woodie Flowers</h3>
                 <p className="text-muted-foreground text-base font-medium 3xl:text-lg 4xl:text-xl">
-                  Aplicativo Web que hospeda minijogos como xadrez, quebra-cabeça, jogo da velha e quadro branco, 
-                  proporcionando uma plataforma digital interativa para os usuários se divertirem.
+                  {t("projects.descWf")}
                 </p>
               </div>
               <div className="p-6 pt-0">
                 <div className="flex flex-col justify-between gap-4">
-                  <img src={project3} alt="Foto do Projeto Ignite Feed" className="border border-neutral-800 rounded-md mt-4 mb-6 w-full"/>
+                  {/* <img src={project3} alt="Foto do Projeto Ignite Feed" className="border border-neutral-800 rounded-md mt-4 mb-6 w-full"/> */}
+                  <p 
+                  className="border border-neutral-800 rounded-md mt-4 mb-6 flex justify-center h-[14.70rem] items-center text-2xl"
+                  >
+                    {t("projects.textWf")}
+                  </p>
                   <div className="flex justify-center">
                     <a href="#" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
                       <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10">
