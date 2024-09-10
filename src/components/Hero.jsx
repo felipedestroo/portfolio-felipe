@@ -48,7 +48,7 @@ const Hero = () => {
                         href="Felipe-Destro-Resume.pdf"
                         target="_blank"
                         className="mr-3 w-32 justify-center flex bg-orange-600 border-2 border-transparent text-white rounded-md p-2 hover:bg-transparent hover:text-orange-500 hover:duration-100 hover:border-orange-600 hover:border-2">
-                        Download CV
+                        {t("hero.button1")}
                     </motion.a>
                     <motion.a
                     variants={container(1.5)}
@@ -56,7 +56,7 @@ const Hero = () => {
                         animate="visible"
                         href="#projects"
                         className="flex w-32 justify-center bg-white border-2 text-neutral-900 rounded-md p-2 hover:bg-transparent hover:text-white hover:duration-100 hover:border-white hover:border-2">
-                        Projetos
+                        {t("hero.button2")}
                     </motion.a>
                 </div>
 

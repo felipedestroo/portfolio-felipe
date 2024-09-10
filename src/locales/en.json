@@ -5,7 +5,9 @@
         "text": "Hi, I'm Felipe Destro, a Brazilian software engineer currently in the sixth semester of a Bachelor's degree in Computer Science. My journey in programming began in 2020, when, while developing my first final project using JavaScript, I realized the transformative power of technology. At the time, I was also a programmer on the FRC (First Robotics Competition) robotics team, which further strengthened my passion for the field. Over time, I specialized in front-end development, where I find satisfaction in creating interactive and intuitive experiences."
     },
     "hero": {
-        "text": "I'm a programming enthusiast, learning to build robust and responsive web applications. Developing since 2020, I've been refining my skills in front-end and its technologies such as React, Next.js, and TypeScript, as well as back-end and database technologies like Node.js and MySQL. My goal is to leverage my experience to create innovative solutions that drive business growth and deliver exceptional user experiences."
+        "text": "I'm a programming enthusiast, learning to build robust and responsive web applications. Developing since 2020, I've been refining my skills in front-end and its technologies such as React, Next.js, and TypeScript, as well as back-end and database technologies like Node.js and MySQL. My goal is to leverage my experience to create innovative solutions that drive business growth and deliver exceptional user experiences.",
+        "button1": "Resume",
+        "button2": "Projects"
     },
     "projects": {
         "title": "Projects",
