@@ -63,7 +63,7 @@ function Projects() {
                 <div className="flex flex-col justify-between gap-4">
                   <img src={project2} alt="Foto do Projeto Ignite Feed" className="border border-neutral-800 rounded-md mt-4 mb-6 w-full"/>
                   <div className="flex justify-center">
-                    <a href="#" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
+                    <a href="https://fdestro.vercel.app/" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
                       <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10">
                         <FiExternalLink />
                       </button>
