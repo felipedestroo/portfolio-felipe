@@ -17,7 +17,11 @@ function Projects() {
               Projetos
           </motion.h2>
           <div className="grid min-h-[50vh] w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 3xl:py-12">
-            <div className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800">
+            <motion.div
+              whileInView={{opacity: 1, x: 0}}
+              initial={{opacity: 0, x: 100}}
+              transition={{duration: 0.5}}
+              className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800">
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="tracking-tight text-2xl font-semibold 3xl:text-3xl 4xl:text-4xl">Ignite Feed</h3>
                 <p className="text-muted-foreground text-base font-medium 3xl:text-lg 4xl:text-xl">
@@ -42,8 +46,12 @@ function Projects() {
                   </div>
                 </div>
               </div> 
-            </div>
-            <div className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800">
+            </motion.div>
+            <motion.div
+              whileInView={{opacity: 1, x: 0}}
+              initial={{opacity: 0, x: 100}}
+              transition={{duration: 0.5}}
+              className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800">
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="tracking-tight text-2xl font-semibold 3xl:text-3xl 4xl:text-4xl">Personal Portfolio</h3>
                 <p className="text-muted-foreground text-base font-medium 3xl:text-lg 4xl:text-xl">
@@ -68,8 +76,12 @@ function Projects() {
                   </div>
                 </div>
               </div> 
-            </div>
-            <div className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800">
+            </motion.div>
+            <motion.div
+              whileInView={{opacity: 1, x: 0}}
+              initial={{opacity: 0, x: 100}}
+              transition={{duration: 0.5}}
+              className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800">
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="tracking-tight text-2xl font-semibold 3xl:text-3xl 4xl:text-4xl">Woodie Flowers</h3>
                 <p className="text-muted-foreground text-base font-medium 3xl:text-lg 4xl:text-xl">
@@ -94,7 +106,7 @@ function Projects() {
                   </div>
                 </div>
               </div> 
-            </div>     
+            </motion.div>     
           </div>
       </div>
     </section>
