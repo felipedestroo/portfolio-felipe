@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiGlobalLine } from "react-icons/ri";
 import { IoMdCheckmark } from 'react-icons/io';
 import logo from "../assets/FdLogoWhite.png";
@@ -46,7 +47,19 @@ const Navbar = () => {
         <img className="mx-2 w-20" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-0 text-3xl">
-
+        <a href="https://www.linkedin.com/in/felipedestro/"
+        target="_blank"
+        className="hover:bg-neutral-800 w-10 h-10 flex justify-center items-center rounded-md transition"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/felipedestroo"
+          target="_blank"
+          className="hover:bg-neutral-800 w-10 h-10 flex justify-center items-center rounded-md transition"
+        >
+          <FaGithub />
+        </a>
         <div className="relative">
           <button
             className="hover:bg-neutral-800 w-10 h-10 flex justify-center items-center rounded-md transition"
