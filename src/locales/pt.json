@@ -6,7 +6,7 @@
     },
     "hero": {
         "text": "Eu sou um entusiasta da programação, aprendendo a construir aplicações web robustas e responsíveis. Desenvolvendo desde 2020, venho aperfeiçoando minhas habilidades com front-end e suas tecnologias como React, Next.js e TypeScript, bem como tecnologias de back-end e banco de dados, como Node.js e MySQL. Meu objetivo é aproveitar minha experiência para criar soluções inovadoras que impulsionem o crescimento dos negócios e proporcionem experiências excepcionais ao usuário.",
-        "button1": "Download Resume",
+        "button1": "Download CV",
         "button2": "Projects"
     },
     "projects": {
