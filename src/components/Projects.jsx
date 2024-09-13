@@ -18,6 +18,7 @@ function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="my-20 text-center text-4xl"
         >
           {t("projects.title")}
@@ -27,6 +28,7 @@ function Projects() {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800"
           >
             <div className="flex flex-col space-y-1.5 p-6">
@@ -78,6 +80,7 @@ function Projects() {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800"
           >
             <div className="flex flex-col space-y-1.5 p-6">
@@ -129,6 +132,7 @@ function Projects() {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800"
           >
             <div className="flex flex-col space-y-1.5 p-6">

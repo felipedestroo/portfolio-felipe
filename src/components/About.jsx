@@ -13,6 +13,7 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="w-full lg:w-1/2">
             <div className="flex justify-center lg:text-center">
                 <p className="">{t("about.text")}</p>

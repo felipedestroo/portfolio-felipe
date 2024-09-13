@@ -27,6 +27,7 @@ const Technologies = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}
             transition={{ duration: 1.5 }} 
+            viewport={{ once: true }}
             className="my-20 text-center text-4xl">
                 Tech Stacks:
         </motion.h1>
@@ -34,11 +35,13 @@ const Technologies = () => {
             whileInView={{ opacity: 1, x: 0 }} 
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
             className="flex flex-wrap items-start justify-center gap-4">
             <motion.div 
                 variants={iconVariants(2)}
                 initial="initial"
                 animate="animate"
+                viewport={{ once: true }}
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                 <RiReactjsFill className="text-5xl text-cyan-400"/>
             </motion.div>
@@ -46,6 +49,7 @@ const Technologies = () => {
                 variants={iconVariants(2.2)}
                 initial="initial"
                 animate="animate"
+                viewport={{ once: true }}
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                 <TbBrandNextjs className="text-5xl"/>
             </motion.div>
@@ -53,6 +57,7 @@ const Technologies = () => {
                 variants={iconVariants(2.4)}
                 initial="initial"
                 animate="animate"
+                viewport={{ once: true }}
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                 <SiJavascript className="text-5xl text-yellow-300"/>
             </motion.div>
@@ -60,6 +65,7 @@ const Technologies = () => {
                 variants={iconVariants(2.6)}
                 initial="initial"
                 animate="animate"
+                viewport={{ once: true }}
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                 <SiTypescript className="text-5xl text-blue-400"/>
             </motion.div>
@@ -67,6 +73,7 @@ const Technologies = () => {
                 variants={iconVariants(2.8)}
                 initial="initial"
                 animate="animate"
+                viewport={{ once: true }}
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                 <SiTailwindcss className="text-5xl text-cyan-300"/>
             </motion.div>
@@ -74,6 +81,7 @@ const Technologies = () => {
                 variants={iconVariants(3.0)}
                 initial="initial"
                 animate="animate"
+                viewport={{ once: true }}
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                 <SiNodedotjs className="text-5xl text-green-500"/>
             </motion.div>
@@ -81,6 +89,7 @@ const Technologies = () => {
                 variants={iconVariants(3.2)}
                 initial="initial"
                 animate="animate"
+                viewport={{ once: true }}
                 className="rounded-2xl border-4 border-neutral-800 p-4">
                 <SiMysql className="text-5xl"/>
             </motion.div>
