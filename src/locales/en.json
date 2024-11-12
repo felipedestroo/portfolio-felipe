@@ -20,6 +20,23 @@
         "title": "Get in Touch",
         "address": "São Paulo, Brazil ",
         "phoneNo": "+55 (11) 94533-5555 ",
-        "email": "felipedestrodev@gmail.com"
+        "email": "user@gmail.com",
+        "nameSection": "Enter your name",
+        "emailSection": "Email Address",
+        "messageSection": "Type your message here.",
+        "sendingButton": "Sending...",
+        "sendButton": "Send"
+
+    },
+    "error": {
+        "errorName": "Name is required",
+        "errorEmail": "Email is required",
+        "errorEmailInvalid": "Email address is invalid",
+        "errorMessage": "Message is required"
+    },
+    "toast": {
+        "success": "Message sent successfully",
+        "console": "FAILED...",
+        "error": "Failed to send message. Please try again later"
     }
 }

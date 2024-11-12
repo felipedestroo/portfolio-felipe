@@ -21,6 +21,22 @@
         "title": "Entre em Contato",
         "address": "São Paulo, Brazil ",
         "phoneNo": "+55 (11) 94533-5555 ",
-        "email": "felipedestrodev@gmail.com"
+        "email": "felipedestrodev@gmail.com",
+        "nameSection": "Digite o seu nome",
+        "emailSection": "Endereço de Email",
+        "messageSection": "Digite a sua mensagem aqui.",
+        "sendingButton": "Enviando...",
+        "sendButton": "Enviar"
+    },
+    "error": {
+    "errorName": "Nome é obrigatório",
+    "errorEmail": "E-mail é obrigatório",
+    "errorEmailInvalid": "Endereço de e-mail inválido",
+    "errorMessage": "Mensagem é obrigatória"
+    },
+    "toast": {
+    "success": "Mensagem enviada com sucesso",
+    "console": "FALHA...",
+    "error": "Falha ao enviar a mensagem. Por favor, tente novamente mais tarde"
     }
 }
