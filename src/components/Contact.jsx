@@ -69,67 +69,70 @@ function Contact() {
     } 
   }
 
-  return (
-    <div className="border-b border-neutral-900 pb-20">
+   return (
+    <div className="border-b border-neutral-900 pb-12 p-4 w-full max-w-4xl mx-auto">
       <Toaster />
-      <h2 className="my-8 text-center text-4xl tracking-tighter">{t("contact.title")}</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4 flex space-x-4">
-          <div className="lg:w-full">
-            <input type="text" 
+      <h2 className="my-8 text-center text-3xl md:text-4xl tracking-tighter">{t("contact.title")}</h2>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+          <div className="w-full sm:w-1/2">
+            <input
+              type="text" 
               id="name"
               name="name"
               value={formData.name}
               placeholder={t("contact.nameSection")}
               onChange={handleChange}
-              className="mb-2 w-full appearance-none rounded-lg border border-orange-300 px-3 py-2 text-sm
+              className="w-full appearance-none rounded-lg border border-orange-300 px-3 py-2 text-sm
               focus:border-orange-500 focus:outline-none bg-transparent text-white"
             />
             {errors.name && (
-              <p className="text-sm text-red-500">{errors.name}</p>
+              <p className="text-sm text-red-500 mt-1">{errors.name}</p>
             )}
           </div>
-          <div className="lg:w-full">
-            <input type="text" 
+          <div className="w-full sm:w-1/2">
+            <input
+              type="email" 
               id="email"
               name="email"
               value={formData.email}
               placeholder={t("contact.emailSection")}
               onChange={handleChange}
-              className="mb-2 w-full appearance-none rounded-lg border border-orange-300 px-3 py-2 text-sm
+              className="w-full appearance-none rounded-lg border border-orange-300 px-3 py-2 text-sm
               focus:border-orange-500 focus:outline-none bg-transparent text-white"
             />
             {errors.email && (
-              <p className="text-sm text-red-500">{errors.email}</p>
+              <p className="text-sm text-red-500 mt-1">{errors.email}</p>
             )}
           </div>
         </div>
-        <div className="mb-8">
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              placeholder={t("contact.messageSection")}
-              onChange={handleChange}
-              className="mb-2 w-full appearance-none rounded-lg border border-orange-300 px-3 py-2 text-sm
-              focus:border-orange-500 focus:outline-none bg-transparent text-white"
-              rows="6"
-            />
-            {errors.message && (
-              <p className="text-sm text-red-500">{errors.message}</p>
-            )}
+        <div>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            placeholder={t("contact.messageSection")}
+            onChange={handleChange}
+            className="w-full min-h-[8rem] appearance-none rounded-lg border border-orange-300 px-3 py-2 text-sm
+            focus:border-orange-500 focus:outline-none bg-transparent text-white"
+            rows={6}
+          />
+          {errors.message && (
+            <p className="text-sm text-red-500 mt-1">{errors.message}</p>
+          )}
+        </div>
+        <button
+          type="submit"
+          className={`w-full rounded border border-orange-500 bg-orange-500
+          px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 transition-colors
+          ${isSending ? "cursor-not-allowed opacity-50" : ""}`}
+          disabled={isSending}
+        >
+          <div className="flex items-center justify-center gap-2">
+            {isSending ? t("contact.sendingButton") : t("contact.sendButton")}
+            <FiSend className="w-4 h-4" />
           </div>
-          <button type="submit" className={`mb-8 w-full rounded border border-orange-500 bg-orange-500
-            px-4 py-2 text-sm font-semibold text-white hover:bg-orange-500 ${
-              isSending ? "cursor-not-allowed opacity-50" : ""
-            }`}
-            disabled={isSending}
-          >
-            <div className="flex items-center justify-center gap-2">
-              {isSending ? (t("contact.sendingButton")) : (t("contact.sendButton"))}
-              <FiSend />
-            </div>
-          </button>
+        </button>
       </form>
     </div>
   )
