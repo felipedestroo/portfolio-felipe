@@ -19,6 +19,13 @@ const Hero = () => {
 
   const currentLang = i18n.language;
 
+  const handleScrollToProjects = () => {
+    const projectsSection = document.querySelector("#projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap justify-between">
@@ -59,15 +66,15 @@ const Hero = () => {
               >
                 {t("hero.button1")}
               </motion.a>
-              <motion.a
+              <motion.button
                 variants={container(1.5)}
                 initial="hidden"
                 animate="visible"
-                href="#projects"
+                onClick={handleScrollToProjects}
                 className="flex w-32 justify-center bg-white border-2 text-neutral-900 rounded-md p-2 hover:bg-transparent hover:font-bold hover:text-white hover:duration-100 hover:border-white hover:border-2"
               >
                 {t("hero.button2")}
-              </motion.a>
+              </motion.button>
             </div>
           </div>
         </div>
