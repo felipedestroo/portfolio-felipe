@@ -42,7 +42,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4">
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-cyan-400">
                 <RiReactjsFill className="text-5xl text-cyan-400"/>
             </motion.div>
             <motion.div 
@@ -50,7 +50,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4">
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-white">
                 <TbBrandNextjs className="text-5xl"/>
             </motion.div>
             <motion.div 
@@ -58,7 +58,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4">
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-yellow-300">
                 <SiJavascript className="text-5xl text-yellow-300"/>
             </motion.div>
             <motion.div 
@@ -66,7 +66,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4">
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-blue-400">
                 <SiTypescript className="text-5xl text-blue-400"/>
             </motion.div>
             <motion.div 
@@ -74,7 +74,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4">
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-cyan-300">
                 <SiTailwindcss className="text-5xl text-cyan-300"/>
             </motion.div>
             <motion.div 
@@ -82,7 +82,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4">
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-green-500">
                 <SiNodedotjs className="text-5xl text-green-500"/>
             </motion.div>
             <motion.div 
@@ -90,7 +90,7 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4">
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-white">
                 <SiMysql className="text-5xl"/>
             </motion.div>
         </motion.div>
