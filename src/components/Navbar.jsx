@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -31,15 +31,31 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState('en');
   const { t } = useTranslation();
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+    setDropdownOpen((prev) => !prev);
   };
 
   const handleChangeLanguage = (language) => {
-  setSelectedLanguage(language);
-  i18n.changeLanguage(language);
-};
+    setSelectedLanguage(language);
+    i18n.changeLanguage(language);
+    setDropdownOpen(false); // Close dropdown after selecting language
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, []);
 
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
@@ -47,9 +63,10 @@ const Navbar = () => {
         <img className="mx-2 w-20" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-0 text-3xl">
-        <a href="https://www.linkedin.com/in/felipedestro/"
-        target="_blank"
-        className="hover:bg-neutral-800 w-10 h-10 flex justify-center items-center rounded-md transition"
+        <a
+          href="https://www.linkedin.com/in/felipedestro/"
+          target="_blank"
+          className="hover:bg-neutral-800 w-10 h-10 flex justify-center items-center rounded-md transition"
         >
           <FaLinkedin />
         </a>
@@ -60,7 +77,7 @@ const Navbar = () => {
         >
           <FaGithub />
         </a>
-        <div className="relative">
+        <div className="relative" ref={dropdownRef}>
           <button
             className="hover:bg-neutral-800 w-10 h-10 flex justify-center items-center rounded-md transition"
             onClick={toggleDropdown}
