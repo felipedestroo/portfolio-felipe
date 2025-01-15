@@ -42,56 +42,63 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-cyan-400">
-                <RiReactjsFill className="text-5xl text-cyan-400"/>
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-cyan-400 flex gap-2 items-center justify-center">
+                <RiReactjsFill className="text-3xl text-cyan-400"/>
+                <p>React</p>
             </motion.div>
             <motion.div 
                 variants={iconVariants(2.2)}
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-white">
-                <TbBrandNextjs className="text-5xl"/>
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-white flex gap-2 items-center justify-center">
+                <TbBrandNextjs className="text-3xl text-white"/>
+                <p>Next.js</p>
             </motion.div>
             <motion.div 
                 variants={iconVariants(2.4)}
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-yellow-300">
-                <SiJavascript className="text-5xl text-yellow-300"/>
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-yellow-300 flex gap-2 items-center justify-center">
+                <SiJavascript className="text-3xl text-yellow-300"/>
+                <p>JavaScript</p>
             </motion.div>
             <motion.div 
                 variants={iconVariants(2.6)}
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-blue-400">
-                <SiTypescript className="text-5xl text-blue-400"/>
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-blue-400 flex gap-2 items-center justify-center">
+                <SiTypescript className="text-3xl text-blue-400"/>
+                <p>TypeScript</p>
             </motion.div>
             <motion.div 
                 variants={iconVariants(2.8)}
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-cyan-300">
-                <SiTailwindcss className="text-5xl text-cyan-300"/>
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-cyan-300 flex gap-2 items-center justify-center">
+                <SiTailwindcss className="text-3xl text-cyan-300"/>
+                <p>Tailwind</p>
             </motion.div>
             <motion.div 
                 variants={iconVariants(3.0)}
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-green-500">
-                <SiNodedotjs className="text-5xl text-green-500"/>
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-green-500 flex gap-2 items-center justify-center">
+                <SiNodedotjs className="text-3xl text-green-500"/>
+                <p>Node.js</p>
             </motion.div>
             <motion.div 
                 variants={iconVariants(3.2)}
                 initial="initial"
                 animate="animate"
                 viewport={{ once: true }}
-                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-white">
-                <SiMysql className="text-5xl"/>
+                className="rounded-2xl border-4 border-neutral-800 p-4 hover:border-white flex gap-2 items-center justify-center">
+                <SiMysql className="text-3xl"/>
+                <p>MySQL</p>
             </motion.div>
         </motion.div>
     </div>
