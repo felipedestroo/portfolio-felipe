@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-import { RiTailwindCssFill, RiJavascriptFill, RiReactjsFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiJavascriptFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt } from "react-icons/fa";
 import project1 from "../assets/projects/IgniteProject.jpg";
 import project2 from "../assets/projects/PortfolioProject.jpg";
-import project3 from "../assets/projects/Project-3.jpg"
+import project3 from "../assets/projects/MegazordProject.jpg"
 import { useTranslation } from "react-i18next";
 
 function Projects() {
@@ -150,14 +150,21 @@ function Projects() {
                   alt="Foto do Projeto Woodie Flowers"
                   className="border border-neutral-800 rounded-md mt-4 mb-6 w-full"
                 />
+                <div className="absolute inset-0 bg-orange-200 opacity-0 hover:opacity-95 transition-opacity duration-500 flex justify-center items-center rounded-md">
+                  <div className="flex space-x-4 text-4xl text-orange-500">
+                    <RiNextjsFill />
+                    <RiReactjsFill />
+                    <BiLogoTypescript />
+                  </div>
+                </div>
               </div>
               <div className="flex justify-center mt-4">
-                <a href="#" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
+                <a href="https://megazord-five.vercel.app/" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
                   <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10">
                     <FiExternalLink />
                   </button>
                 </a>
-                <a href="#" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
+                <a href="https://github.com/giovannivicentin/megazord" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
                   <button className="inline-flex items-center justify-center whitespace-nowrap text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10">
                     <FiGithub />
                   </button>
