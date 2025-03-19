@@ -173,6 +173,9 @@ function Projects() {
             </div>
           </motion.div>
         </div>
+        <div className="flex justify-center py-4">
+          <a href="" className="flex justify-center items-center bg-orange-500 rounded-md w-32 h-8 text-center hover:bg-orange-600 transition font-semibold text-sm">{t("projects.button")}</a>
+        </div>
       </div>
     </section>
   );

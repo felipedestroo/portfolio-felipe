@@ -1,6 +1,6 @@
 {
-    "about": { 
-        "title1": "About" , 
+    "about": {
+        "title1": "About",
         "title2": "Me",
         "text": "Hi, I'm Felipe Destro, a Brazilian software engineer currently in the sixth semester of a Bachelor's degree in Computer Science. My journey in programming began in 2020, when, while developing my first final project using JavaScript, I realized the transformative power of technology. At the time, I was also a programmer on the FRC (First Robotics Competition) robotics team, which further strengthened my passion for the field. Over time, I specialized in front-end development, where I find satisfaction in creating interactive and intuitive experiences."
     },
@@ -14,7 +14,8 @@
         "descIgnite": "Interactive social media feed simulator that allows users to comment, like, and remove comments, offering a seamless and delightful user journey.",
         "descPortfolio": "A personal portfolio website that showcases projects, skills, and contact information, ideal for highlighting competencies and facilitating professional connections.",
         "descWf": "A web application hosting mini-games such as chess, puzzles, tic-tac-toe, and a whiteboard, providing an interactive digital platform for users to enjoy.",
-        "textWf": "In Development"
+        "textWf": "In Development",
+        "button": "See More"
     },
     "contact": {
         "title": "Get in Touch",
@@ -26,7 +27,6 @@
         "messageSection": "Type your message here.",
         "sendingButton": "Sending...",
         "sendButton": "Send"
-
     },
     "error": {
         "errorName": "Name is required",

@@ -1,6 +1,6 @@
 {
-    "about": { 
-        "title1": "Sobre", 
+    "about": {
+        "title1": "Sobre",
         "title2": "Mim",
         "text": "Olá, sou o Felipe Destro, engenheiro de software brasileiro e atualmente cursando o sexto semestre de Bacharelado em Ciência da Computação. Minha jornada na programação começou em 2020, quando, ao desenvolver meu primeiro TCC utilizando JavaScript, percebi a força transformadora da tecnologia. Na época, também fui programador na equipe de robótica da FRC (First Robotics Competition), o que reforçou ainda mais minha paixão pela área. Com o tempo, me especializei em front-end, onde encontro satisfação em criar experiências interativas e intuitivas."
     },
@@ -14,8 +14,8 @@
         "descIgnite": "Aplicação desenvolvida para simular um feed de rede social, introduzindo interatividades como comentar, curtir e excluir comentários e proporcionando uma experiência de usuária fluida e agradável.",
         "descPortfolio": "Site de portfólio pessoal que exibe projetos, habilidades e informações de contato, ideal para destacar competências e facilitar conexões profissionais.",
         "descWf": "Aplicativo Web que hospeda minijogos como xadrez, quebra-cabeça, jogo da velha e quadro branco, proporcionando uma plataforma digital interativa para os usuários se divertirem.",
-        "textWf": "Em Desenvolvimento"
-
+        "textWf": "Em Desenvolvimento",
+        "button": "Veja Mais"
     },
     "contact": {
         "title": "Entre em Contato",
@@ -29,14 +29,14 @@
         "sendButton": "Enviar"
     },
     "error": {
-    "errorName": "Nome é obrigatório",
-    "errorEmail": "E-mail é obrigatório",
-    "errorEmailInvalid": "Endereço de e-mail inválido",
-    "errorMessage": "Mensagem é obrigatória"
+        "errorName": "Nome é obrigatório",
+        "errorEmail": "E-mail é obrigatório",
+        "errorEmailInvalid": "Endereço de e-mail inválido",
+        "errorMessage": "Mensagem é obrigatória"
     },
     "toast": {
-    "success": "Mensagem enviada com sucesso",
-    "console": "FALHA...",
-    "error": "Falha ao enviar a mensagem. Por favor, tente novamente mais tarde"
+        "success": "Mensagem enviada com sucesso",
+        "console": "FALHA...",
+        "error": "Falha ao enviar a mensagem. Por favor, tente novamente mais tarde"
     }
 }
