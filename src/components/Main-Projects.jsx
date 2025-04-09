@@ -21,7 +21,7 @@ function MainProjects() {
           viewport={{ once: true }}
           className="my-20 text-center text-4xl"
         >
-          {t("projects.title")}
+          {t("projects.title2")}
         </motion.h2>
         <div className="grid min-h-[50vh] w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 3xl:py-12">
           <motion.div
