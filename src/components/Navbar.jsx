@@ -7,6 +7,7 @@ import { IoMdCheckmark } from 'react-icons/io';
 import logo from "../assets/FdLogoWhite.png";
 import i18n from 'i18next';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import { Link } from 'react-router-dom';
 
 const LanguageItem = ({ language, onClick, isSelected }) => {
   return (
@@ -38,7 +39,9 @@ const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
-        <img className="mx-2 w-20" src={logo} alt="logo" />
+        <Link to="/">
+          <img className="mx-2 w-20" src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="m-8 flex items-center justify-center gap-0 text-3xl">
         <a

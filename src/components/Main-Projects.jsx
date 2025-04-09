@@ -7,9 +7,8 @@ import project1 from "../assets/projects/IgniteProject.jpg";
 import project2 from "../assets/projects/PortfolioProject.jpg";
 import project3 from "../assets/projects/MegazordProject.jpg"
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
-function Projects() {
+function MainProjects() {
   const { t } = useTranslation();
 
   return (
@@ -174,12 +173,9 @@ function Projects() {
             </div>
           </motion.div>
         </div>
-        <div className="flex justify-center py-4">
-          <Link to="/projects" className="flex justify-center items-center bg-orange-500 rounded-md w-32 h-8 text-center hover:bg-orange-600 transition font-semibold text-sm">{t("projects.button")}</Link>
-        </div>
       </div>
     </section>
   );
 }
 
-export default Projects;
+export default MainProjects;
