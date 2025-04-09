@@ -4,6 +4,7 @@ import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import Projects from "../components/Preview-Projects"
 import Technologies from "../components/Technologies"
+import Footer from "../components/Footer"
 import '../i18nify'
 
 function MainPage ()  {
@@ -20,6 +21,7 @@ function MainPage ()  {
         <Technologies />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </div>
   )
