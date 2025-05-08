@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
 import MainProjects from "../components/Main-Projects"
+import Footer from  "../components/Footer"
 import '../i18nify'
 
 function ProjectsPage () {
@@ -12,6 +13,7 @@ function ProjectsPage () {
       <div className="container mx-auto px-8">
         <Navbar />
         <MainProjects />
+        <Footer />
       </div>
     </div>
   )
