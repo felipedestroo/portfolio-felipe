@@ -11,6 +11,7 @@
     },
     "projects": {
         "title": "Projetos",
+        "title2": "Todos os Projetos",
         "descIgnite": "Aplicação desenvolvida para simular um feed de rede social, introduzindo interatividades como comentar, curtir e excluir comentários e proporcionando uma experiência de usuária fluida e agradável.",
         "descPortfolio": "Site de portfólio pessoal que exibe projetos, habilidades e informações de contato, ideal para destacar competências e facilitar conexões profissionais.",
         "descWf": "Aplicativo Web que hospeda minijogos como xadrez, quebra-cabeça, jogo da velha e quadro branco, proporcionando uma plataforma digital interativa para os usuários se divertirem.",
@@ -38,5 +39,8 @@
         "success": "Mensagem enviada com sucesso",
         "console": "FALHA...",
         "error": "Falha ao enviar a mensagem. Por favor, tente novamente mais tarde"
+    },
+    "footer": {
+        "rights": "Todos os direitos reservados."
     }
 }

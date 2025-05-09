@@ -11,6 +11,7 @@
     },
     "projects": {
         "title": "Projects",
+        "title2": "All Projects",
         "descIgnite": "Interactive social media feed simulator that allows users to comment, like, and remove comments, offering a seamless and delightful user journey.",
         "descPortfolio": "A personal portfolio website that showcases projects, skills, and contact information, ideal for highlighting competencies and facilitating professional connections.",
         "descWf": "A web application hosting mini-games such as chess, puzzles, tic-tac-toe, and a whiteboard, providing an interactive digital platform for users to enjoy.",
@@ -38,5 +39,8 @@
         "success": "Message sent successfully",
         "console": "FAILED...",
         "error": "Failed to send message. Please try again later"
+    },
+    "footer": {
+        "rights": "All rights reserved."
     }
 }

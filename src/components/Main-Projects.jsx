@@ -7,14 +7,13 @@ import project1 from "../assets/projects/IgniteProject.jpg";
 import project2 from "../assets/projects/PortfolioProject.jpg";
 import project3 from "../assets/projects/MegazordProject.jpg"
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
-function Projects() {
+function MainProjects() {
   const { t } = useTranslation();
 
   return (
     <section id="projects">
-      <div className="border-b border-neutral-900 pb-4">
+      <div className="border-b border-neutral-900 pb-24">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
@@ -22,7 +21,7 @@ function Projects() {
           viewport={{ once: true }}
           className="my-20 text-center text-4xl"
         >
-          {t("projects.title")}
+          {t("projects.title2")}
         </motion.h2>
         <div className="grid min-h-[50vh] w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 3xl:py-12">
           <motion.div
@@ -174,12 +173,9 @@ function Projects() {
             </div>
           </motion.div>
         </div>
-        <div className="flex justify-center py-4">
-          <Link to="/projects" className="flex justify-center items-center bg-orange-500 rounded-md w-32 h-8 text-center hover:bg-orange-600 transition font-semibold text-sm">{t("projects.button")}</Link>
-        </div>
       </div>
     </section>
   );
 }
 
-export default Projects;
+export default MainProjects;

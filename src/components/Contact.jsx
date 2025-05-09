@@ -70,8 +70,9 @@ function Contact() {
   }
 
    return (
-    <div className="border-b border-neutral-900 pb-12 p-4 w-full max-w-4xl mx-auto">
+    <div className="border-b border-neutral-900 pb-12">
       <Toaster />
+      <div className="p-4 w-full max-w-4xl mx-auto">
       <h2 className="my-8 text-center text-3xl md:text-4xl tracking-tighter">{t("contact.title")}</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
@@ -134,6 +135,7 @@ function Contact() {
           </div>
         </button>
       </form>
+      </div>
     </div>
   )
 }
