@@ -53,7 +53,7 @@ function Contact() {
           "service_v5k3pvf",
           "template_gwrlaqb",
           formData,
-          "VLBp9X9VDKmIkpc3-"
+          "nOfwgWR4Rhky_AzU1"
         )
         .then(() => {
           toast.success(t("toast.success"));
