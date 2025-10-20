@@ -7,6 +7,7 @@ import project1 from "../assets/projects/IgniteProject.jpg";
 import project2 from "../assets/projects/PortfolioProject.jpg";
 import project3 from "../assets/projects/MegazordProject.jpg";
 import project4 from "../assets/projects/WeatherProject.jpg";
+import project5 from "../assets/projects/PetshopProject.jpg";
 import { useTranslation } from "react-i18next";
 
 function MainProjects() {
@@ -209,6 +210,50 @@ function MainProjects() {
                   </button>
                 </a>
                 <a href="https://github.com/felipedestroo/clima-tempo" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
+                  <button className="inline-flex items-center justify-center whitespace-nowrap text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10">
+                    <FiGithub />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="rounded-lg relative mx-auto flex h-full max-w-[30rem] flex-col justify-between border border-neutral-800"
+          >
+            <div className="flex flex-col space-y-1.5 p-6">
+              <h3 className="tracking-tight text-2xl font-semibold 3xl:text-3xl 4xl:text-4xl">
+                Petshop Landing Page
+              </h3>
+              <p className="text-muted-foreground text-base font-medium 3xl:text-lg 4xl:text-xl">
+                {t("projects.descPs")}
+              </p>
+            </div>
+            <div className="relative p-6 pt-0">
+              <div className="relative">
+                <img
+                  src={project5}
+                  alt="Foto do Projeto Petshop"
+                  className="border border-neutral-800 rounded-md mt-4 mb-6 w-full"
+                />
+                <div className="absolute inset-0 bg-orange-200 opacity-0 hover:opacity-95 transition-opacity duration-500 flex justify-center items-center rounded-md">
+                  <div className="flex space-x-4 text-4xl text-orange-500">
+                    <RiNextjsFill />
+                    <RiReactjsFill />
+                    <BiLogoTypescript />
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-center mt-4">
+                <a href="https://petshop-landing-dev.vercel.app/" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
+                  <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10">
+                    <FiExternalLink />
+                  </button>
+                </a>
+                <a href="https://github.com/felipedestroo/petshop" target="_blank" className="flex items-center hover:text-orange-500 rounded-md">
                   <button className="inline-flex items-center justify-center whitespace-nowrap text-xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-10 w-10">
                     <FiGithub />
                   </button>
