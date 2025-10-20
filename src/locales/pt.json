@@ -15,6 +15,7 @@
         "descIgnite": "Aplicação desenvolvida para simular um feed de rede social, introduzindo interatividades como comentar, curtir e excluir comentários e proporcionando uma experiência de usuária fluida e agradável.",
         "descPortfolio": "Site de portfólio pessoal que exibe projetos, habilidades e informações de contato, ideal para destacar competências e facilitar conexões profissionais.",
         "descWf": "Aplicativo Web que hospeda minijogos como xadrez, quebra-cabeça, jogo da velha e quadro branco, proporcionando uma plataforma digital interativa para os usuários se divertirem.",
+        "descWt": "Este projeto é uma aplicação web simples desenvolvida em Angular que permite ao usuário consultar as condições climáticas de qualquer cidade do mundo em tempo real, utilizando a OpenWeatherMap API.",
         "textWf": "Em Desenvolvimento",
         "button": "Veja Mais"
     },
