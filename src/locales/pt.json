@@ -16,6 +16,7 @@
         "descPortfolio": "Site de portfólio pessoal que exibe projetos, habilidades e informações de contato, ideal para destacar competências e facilitar conexões profissionais.",
         "descWf": "Aplicativo Web que hospeda minijogos como xadrez, quebra-cabeça, jogo da velha e quadro branco, proporcionando uma plataforma digital interativa para os usuários se divertirem.",
         "descWt": "Este projeto é uma aplicação web simples desenvolvida em Angular que permite ao usuário consultar as condições climáticas de qualquer cidade do mundo em tempo real, utilizando a OpenWeatherMap API.",
+        "descPs": "Este projeto é uma landing page desenvolvida em Next.js, que simula um site de pet shop e utiliza componentes do Shadcn para tornar o design mais agradável e intuitivo para o usuário.",
         "textWf": "Em Desenvolvimento",
         "button": "Veja Mais"
     },

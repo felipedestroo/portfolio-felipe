@@ -16,6 +16,7 @@
         "descPortfolio": "A personal portfolio website that showcases projects, skills, and contact information, ideal for highlighting competencies and facilitating professional connections.",
         "descWf": "A web application hosting mini-games such as chess, puzzles, tic-tac-toe, and a whiteboard, providing an interactive digital platform for users to enjoy.",
         "descWt": "This project is a simple web application developed in Angular that allows users to check the weather conditions of any city in the world in real time, using the OpenWeatherMap API.",
+        "descPs": "This project is a landing page developed in Next.js that simulates a pet shop website and uses Shadcn components to create a more pleasant and intuitive design for the user.",
         "textWf": "In Development",
         "button": "See More"
     },
